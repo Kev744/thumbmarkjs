@@ -10,6 +10,7 @@ export interface optionsInterface {
 
 export let options: optionsInterface = {
     exclude: [],
+    include: [],
 }
 
 export function setOption<K extends keyof optionsInterface>(key: K, value: optionsInterface[K]) {
